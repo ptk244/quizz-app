@@ -1,0 +1,79 @@
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+}
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px 20px 0px 0px;
+    z-index: 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background: linear-gradient(to bottom, #f5f6fe, #c6b1f2);
+  }
+  
+ 
+  .logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .logo {
+    width: 50px;
+  }
+  
+  
+  .quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .quiz-circle {
+    background-color: white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 120px;
+  }
+  
+  .quiz-circle p {
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+  }
+  
+  
+  .start-button {
+    margin-top: 163px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 320px;
+  }
+  
+  .start-button:hover {
+    background-color: darkred;
+  }
+  
