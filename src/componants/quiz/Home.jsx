@@ -1,8 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./Home.css"; 
+import { data } from "../../assets/data";
 
-const API_BASE_URL = "http://localhost:5000/api/quiz"; 
+// const API_BASE_URL = "http://localhost:5000/api/quiz"; 
 
 const Home = () => {
     const navigate = useNavigate();
@@ -12,8 +13,8 @@ const Home = () => {
         setLoading(true); 
         try {
             
-            const response = await fetch(`${API_BASE_URL}/quizzes`);
-            const data = await response.json();
+            // const response = await fetch(`${API_BASE_URL}/quizzes`);
+            // const data = await response.json();
             if (data.length > 0) {
                 const quizId = data[0]._id; 
                 navigate(`/quiz/${quizId}`, { state: { quizData: data[0].questions } });
