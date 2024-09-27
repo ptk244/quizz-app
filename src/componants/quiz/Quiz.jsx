@@ -4,7 +4,7 @@ import "./Quiz.css";
 import { useNavigate } from "react-router-dom";
 import { useLocation, useParams } from "react-router-dom";
 
-const API_BASE_URL = "http://localhost:5000/api/quiz";
+// const API_BASE_URL = "http://localhost:5000/api/quiz";
 
 const Quiz = () => {
   const { quizId } = useParams();
@@ -39,22 +39,22 @@ const Quiz = () => {
   const next = async () => {
     if (lock) {
       if (index === quizData.length - 1) {
-        try {
-          const response = await fetch(`${API_BASE_URL}/quizzes/finish`, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              quizId,
-              score,
-            }),
-          });
-          const resultquizData = await response.json();
-          console.log(resultquizData);
-        } catch (error) {
-          console.error("Error finishing quiz:", error);
-        }
+        // try {
+        //   const response = await fetch(`${API_BASE_URL}/quizzes/finish`, {
+        //     method: "POST",
+        //     headers: {
+        //       "Content-Type": "application/json",
+        //     },
+        //     body: JSON.stringify({
+        //       quizId,
+        //       score,
+        //     }),
+        //   });
+        //   const resultquizData = await response.json();
+        //   console.log(resultquizData);
+        // } catch (error) {
+        //   console.error("Error finishing quiz:", error);
+        // }
         setResult(true);
         setIndex(index + 1);
         return;
