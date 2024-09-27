@@ -32,7 +32,8 @@ const Home = () => {
         <div className="container">
             <div className="home-container">
                 <div className="logo-container">
-                    <img src="/" alt="Upraised logo" className="logo" />
+                <img src="src/assets/upraised_logo.jpeg" alt="Upraised logo" className="logo" />
+                <h1><b>upraised</b></h1>
                 </div>
                 <div className="quiz-container">
                     <div className="quiz-circle">

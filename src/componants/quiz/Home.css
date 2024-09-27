@@ -25,13 +25,16 @@
   
  
   .logo-container {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 10px; 
+    margin-bottom: 20px;
   }
   
   .logo {
-    width: 50px;
+    width: 30px; 
+    height: auto;
   }
   
   
@@ -62,7 +65,7 @@
   
   
   .start-button {
-    margin-top: 163px;
+    margin-top: 140px;
     background-color: red;
     color: white;
     border: none;
