@@ -136,9 +136,8 @@ const Quiz = () => {
               style={{ "--progress": `${progress}%` }}
             >
               <div className="circle">
-                <p>
-                  {index + 1}/{quizData.length}
-                </p>
+                <h1>{index + 1}</h1> <p>/{quizData.length}</p>
+                
               </div>
             </div>
             <h2>
